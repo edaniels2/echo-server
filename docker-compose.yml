@@ -1,0 +1,13 @@
+version: '2'
+services:
+  notify-test:
+    container_name: notify-test
+    build: ./
+    volumes:
+      - ./index.js:/usr/src/app/index.js
+      - /usr/src/app/node_modules
+    command: "nodemon index.js"
+networks:
+  default:
+    external:
+      name: dev-network
