@@ -1,7 +1,7 @@
 version: '2'
 services:
-  notify-test:
-    container_name: notify-test
+  echo.bluemoonformsdev.com:
+    container_name: echo.bluemoonformsdev.com
     build: ./
     volumes:
       - ./index.js:/usr/src/app/index.js
