@@ -8,7 +8,6 @@ let cache = {};
 
 const server = express();
 server.use(cors());
-// server.use(parser.json({ type: '*/*' }));
 
 server.get('/', (req, res) => res.send('check'));
 server.post('/', parser.json({ type: '*/*' }), (req, res) => {
